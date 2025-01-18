@@ -43,4 +43,3 @@ auth.json
 /storage/pail
 /vendor
 .env
-.env.*
