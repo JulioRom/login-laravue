@@ -30,3 +30,4 @@ cd ..
 echo "✅ Instalación completada. Accede a:"
 echo "🔹 Backend: http://127.0.0.1:8000"
 echo "🔹 Frontend: http://localhost:8080"
+
