@@ -10,23 +10,23 @@ command -v npm >/dev/null 2>&1 || { echo "❌ npm no está instalado. Instálalo
 
 echo "✅ Todas las dependencias están instaladas."
 
-# Configurar Backend
+# Configurar Backend (Laravel 11)
 echo "🔧 Configurando Backend (Laravel 11)..."
 cd backend || exit
 composer install
 cp .env.example .env
 php artisan key:generate
 php artisan migrate --seed
-php artisan serve --port=8000 & 
+nohup php artisan serve > laravel.log 2>&1 &
 cd ..
 
-# Configurar Frontend
+# Configurar Frontend (Vue 3)
 echo "🔧 Configurando Frontend (Vue 3)..."
 cd frontend || exit
 npm install
-npm run dev -- --port 5173 & 
+nohup npm run serve > vue.log 2>&1 &
 cd ..
 
 echo "✅ Instalación completada. Accede a:"
 echo "🔹 Backend: http://127.0.0.1:8000"
-echo "🔹 Frontend: http://localhost:5173"
+echo "🔹 Frontend: http://localhost:8080"
