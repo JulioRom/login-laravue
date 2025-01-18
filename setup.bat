@@ -9,22 +9,22 @@ where npm >nul 2>nul || (echo ❌ npm no está instalado. Instálalo antes de co
 
 echo ✅ Todas las dependencias están instaladas.
 
-:: Configurar Backend
+:: Configurar Backend (Laravel 11)
 echo 🔧 Configurando Backend (Laravel 11)...
-cd backend
+pushd backend
 composer install
 copy .env.example .env
 php artisan key:generate
 php artisan migrate --seed
 start /B php artisan serve
-cd ..
+popd
 
-:: Configurar Frontend
+:: Configurar Frontend (Vue 3)
 echo 🔧 Configurando Frontend (Vue 3)...
-cd frontend
+pushd frontend
 npm install
 start /B npm run dev
-cd ..
+popd
 
 echo ✅ Instalación completada. Accede a:
 echo 🔹 Backend: http://127.0.0.1:8000
