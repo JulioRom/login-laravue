@@ -1,7 +1,7 @@
 # Proyecto: Login y Registro con Laravel 11 y Vue 3
 
 ## Descripción
-Este proyecto implementa un sistema de login y registro utilizando **Laravel 11** como backend y **Vue 3** como frontend.
+Este proyecto implementa un sistema de login y registro utilizando **Laravel 11** como backend y **Vue 3** como frontend. 
 El sistema permite a los usuarios registrarse, iniciar sesión y acceder a una página de perfil protegida.
 
 ## Tecnologías Utilizadas
@@ -16,28 +16,30 @@ El sistema permite a los usuarios registrarse, iniciar sesión y acceder a una p
 
 ### **1. Clonar el Repositorio**
 ```sh
-    git clone https://github.com/tu-repositorio.git
+    git clone https://github.com/JulioRom/login-laravue
     cd login-laravue
 ```
 
-### **2. Configurar y Ejecutar el Backend (Laravel 11)**
-```sh
-    cd backend
-    composer install
-    cp .env.example .env
-    php artisan key:generate
-    php artisan migrate --seed
-    php artisan serve
-```
-_El backend estará disponible en: `http://127.0.0.1:8000`_
+### **2. Configurar y Ejecutar el Proyecto con Script Automático**
+Para facilitar la instalación, puedes ejecutar uno de los siguientes scripts según tu sistema operativo:
 
-### **3. Configurar y Ejecutar el Frontend (Vue 3)**
+#### **Windows (CMD):**
 ```sh
-    cd ../frontend
-    npm install
-    npm run dev
+setup.bat
 ```
-_El frontend estará disponible en: `http://localhost:5173/`_
+
+#### **Linux/Mac (Bash):**
+```sh
+chmod +x setup.sh
+./setup.sh
+```
+
+#### **Universal (Python):**
+```sh
+python setup.py
+```
+
+Estos scripts automatizan la instalación de dependencias, configuración de la base de datos y ejecución del backend y frontend.
 
 ---
 
@@ -66,7 +68,7 @@ _El frontend estará disponible en: `http://localhost:5173/`_
 
 ---
 
-## Author
+## **Author**
 
 - **Developed by JulioRom**
 - **Contact:** [julioandrescampos@gmail.com](email to:julioandrescampos@gmail.com)

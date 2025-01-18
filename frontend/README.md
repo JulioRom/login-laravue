@@ -26,9 +26,9 @@ VITE_API_URL=http://127.0.0.1:8000/api
 
 ### 3️⃣ Iniciar el servidor de desarrollo
 ```sh
-npm run dev
+npm run serve
 ```
-_El frontend estará disponible en: `http://localhost:5173/`_
+_El frontend estará disponible en: `http://localhost:8080/`_
 
 ---
 
@@ -73,7 +73,7 @@ router.beforeEach((to, from, next) => {
 
 ---
 
-## Author
+## **Author**
 
 - **Developed by JulioRom**
 - **Contact:** [julioandrescampos@gmail.com](email to:julioandrescampos@gmail.com)
